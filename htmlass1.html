@@ -1,0 +1,209 @@
+<html>
+    <head>
+        <title>HTML Practice Page</title>
+        <meta charset="UTF-8">
+        <style>
+            body {
+                margin: 0;
+                padding: 30px 20px;
+                max-width: 850px;
+                margin-left: auto;
+                margin-right: auto;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: #eef2ff;
+                line-height: 1.7;
+            }
+
+            /* Main Heading */
+            #main-heading {
+                text-align: center;
+                font-size: 3rem;
+                color: #312e81;
+                margin-bottom: 25px;
+            }
+
+            #main-heading:hover {
+                color: #6366f1;
+            }
+
+            /* Subheading */
+            h3 {
+                letter-spacing: 2px;
+                font-size: 1.3rem;
+                text-align: center;
+                margin-bottom: 25px;
+            }
+
+            /* Description Paragraph */
+            .description {
+                background-color: #f0fdf4;
+                padding: 20px;
+                border-radius: 10px;
+                font-size: 1.05rem;
+                margin-bottom: 20px;
+            }
+
+            /* Special Paragraph */
+            #special-paragraph {
+                border: 2px dashed #db2777;
+                background-color: #fdf2f8;
+                padding: 18px;
+                font-size: 1rem;
+                margin-bottom: 25px;
+            }
+
+            hr {
+                width: 60%;
+                height: 3px;
+                border: none;
+                background-color: #6366f1;
+                margin: 30px auto;
+            }
+
+            pre {
+                background-color: #020617;
+                color: #22c55e;
+                font-family: 'Courier New', monospace;
+                padding: 18px;
+                border-radius: 8px;
+                font-size: 0.95rem;
+                margin-bottom: 30px;
+            }
+
+            /* Unordered List */
+            .features-list {
+                list-style: none;
+                background-color: #fff7ed;
+                padding: 20px;
+                border-radius: 10px;
+                margin-bottom: 30px;
+            }
+
+            .features-list li {
+                padding: 10px 0 10px 28px;
+                position: relative;
+                font-size: 1rem;
+            }
+
+            .features-list li:before {
+                content: "-";
+                position: absolute;
+                left: 0;
+                color: #f97316;
+            }
+
+            /* Ordered List */
+            #steps-list {
+                padding-left: 40px;
+                margin-bottom: 30px;
+            }
+
+            #steps-list li {
+                font-size: 1.05rem;
+                margin-bottom: 12px;
+            }
+
+            /* Link */
+            .resource-link {
+                color: #1d4ed8;
+                font-size: 1rem;
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+            .resource-link:hover {
+                text-decoration: underline;
+            }
+
+            /* Div Card */
+            div {
+                border: 1px solid #c7d2fe;
+                padding: 18px;
+                border-radius: 10px;
+                background-color: #ffffff;
+                margin-bottom: 25px;
+                font-size: 1rem;
+            }
+
+            span {
+                font-size: 1.1em;
+                font-weight: bold;
+                color: #dc2626;
+            }
+
+            /* Button */
+            #submit-button {
+                background-color: #6366f1;
+                color: white;
+                padding: 12px 28px;
+                border: none;
+                border-radius: 6px;
+                font-size: 1rem;
+                cursor: pointer;
+            }
+
+            #submit-button:hover {
+                background-color: #4338ca;
+                transform: scale(1.05);
+            }
+
+            /* Footer */
+            .page-footer {
+                font-size: 0.85rem;
+                color: #6b7280;
+                text-align: center;
+                margin-top: 40px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 id="main-heading">Welcome to HTML Practice</h1>
+
+        <h3 style="color:#4f46e5;">Learning HTML Basics</h3>
+
+        <p class="description">
+            <b>HTML</b> is the <strong>foundation of web development</strong>.  
+            It gives <em>structure</em> and meaning to web content.
+        </p>
+
+        <p id="special-paragraph">
+            HTML is <mark>important</mark> for creating web pages.  
+            It uses <b>tags</b> to organize content clearly.
+        </p>
+
+        <hr>
+
+        <pre>
+HTML creates structure
+CSS adds style
+JavaScript adds behavior
+        </pre>
+
+        <ul class="features-list">
+            <li>Beginner friendly</li>
+            <li>Platform independent</li>
+            <li>Used everywhere on the web</li>
+        </ul>
+
+        <ol id="steps-list">
+            <li>Understand tags</li>
+            <li>Practice daily</li>
+            <li>Create projects</li>
+        </ol>
+
+        <a href="https://www.w3schools.com/html/" target="_blank" class="resource-link">
+            Learn more about HTML
+        </a>
+
+        <div>
+            This is a <span>highlighted</span> word inside a div.
+        </div>
+
+        <button id="submit-button">Submit</button>
+
+        <footer class="page-footer">
+            <p>&copy; 2026 HTML Practice Page</p>
+        </footer>
+    </body>
+</html>

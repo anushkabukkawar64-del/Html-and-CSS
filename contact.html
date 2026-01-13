@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Creative Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <h1 class="logo">✨ CreativeStudio</h1>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Contact Hero -->
+        <section class="contact-hero">
+            <h2>Get In Touch</h2>
+            <p>We'd love to hear from you. <strong>Let's create something amazing together!</strong></p>
+        </section>
+
+        <div class="contact-wrapper">
+            <!-- Contact Info -->
+            <section class="contact-info">
+                <h3>Contact Information</h3>
+                <address>
+                    <p><strong>📍 Address:</strong></p>
+                    <p>Gulab Bhuan, Tharkwad road, prince Street CC 12345<br>India</p>
+                    
+                    <p><strong>📧 Email:</strong></p>
+                    <p><a href="mailto:hello@creativestudio.com">hello@creativestudio.com</a></p>
+                    
+                    <p><strong>📞 Phone:</strong></p>
+                    <p><a href="tel:+919876543210">+91 9876543210</a></p>
+                    
+                    <p><strong>🕒 Hours:</strong></p>
+                    <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                </address>
+            </section>
+
+            <!-- Contact Form -->
+            <section class="contact-form-section">
+                <h3>Send us a Message</h3>
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Sneha Patil">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="sneha@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="number" id="phone" name="phone" placeholder="+91 9876543210">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Service Interested In</label>
+                        <select id="service" name="service">
+                            <option value="">Select a service</option>
+                            <option value="web-design">Web Design</option>
+                            <option value="mobile-app">Mobile App</option>
+                            <option value="branding">Branding</option>
+                            <option value="consulting">Consulting</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group radio-group">
+                        <label>Budget Range *</label>
+                        <div>
+                            <input type="radio" id="budget1" name="budget" value="under-1000" required>
+                            <label for="budget1">Under $1,000</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="budget2" name="budget" value="1000-5000" required>
+                            <label for="budget2">$1,000 - $5,000</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="budget3" name="budget" value="5000-plus" required>
+                            <label for="budget3">$5,000+</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <div>
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Subscribe to our newsletter</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">I agree to the terms and conditions *</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Tell us about your project..."></textarea>
+                    </div>
+
+                    <div class="form-buttons">
+                        <button type="submit" class="btn btn-submit">Send Message</button>
+                        <button type="reset" class="btn btn-reset">Clear Form</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <section class="footer-content">
+            <p>&copy; 2026 Creative Studio. All rights reserved.</p>
+            <address>
+                📍 33/8/21, 2nd Street,r A K Rd, National Market, Wadala | 📧 hello@creativestudio.com
+            </address>
+            <div class="social-links">
+                <a href="#" title="Facebook">f</a>
+                <a href="#" title="Twitter">𝕏</a>
+                <a href="#" title="Instagram">📷</a>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

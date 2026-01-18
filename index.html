@@ -3,90 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creative Studio - Home</title>
+    <title>Music Store</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+    <!-- HEADER -->
     <header>
-        <nav class="navbar">
-            <div class="nav-container">
-                <h1 class="logo">✨ CreativeStudio</h1>
-                <ul class="nav-links">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="login.html">Login</a></li>
-                </ul>
-            </div>
+        <h2 class="logo">MusicHub</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Songs</a>
+            <a href="#">Shop</a>
+            <a href="#">Subscriptions</a>
+            <a href="login.html" class="login-btn">Login</a>
         </nav>
     </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-overlay">
-                <h2>Welcome to Creative Studio</h2>
-                <p>Where <mark>Innovation</mark> Meets <strong>Design</strong></p>
-                <button class="cta-btn">Get Started</button>
-            </div>
-        </section>
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Feel The Beat</h1>
+        <p>Stream your favorite tracks anytime, anywhere.</p>
+        <button class="btn">Start Free Trial</button>
+    </section>
 
-        <!-- Welcome Section -->
-        <section class="welcome">
-            <article>
-                <h3>Why Choose Us?</h3>
-                <p>We deliver <strong>premium creative solutions</strong> that transform your vision into reality. Our team of experts is dedicated to excellence.</p>
-            </article>
-        </section>
+    <!-- SONG SECTION -->
+    <section class="albums">
+        <h2>Popular Songs</h2>
+        <a href="playlist.html">Songs</a>
 
-        <!-- Features Section -->
-        <section class="features">
-            <h3>Our Key Features</h3>
-            <ul class="feature-list">
-                <li>🎨 <span class="feature-title">Creative Design</span> - Stunning visual experiences</li>
-                <li>⚡ <span class="feature-title">Fast Development</span> - Quick turnaround time</li>
-                <li>🔒 <span class="feature-title">Secure & Reliable</span> - Enterprise-grade solutions</li>
-            </ul>
-        </section>
+        <div class="album-container">
+            <div class="album">
+                <img src="https://i.pinimg.com/1200x/26/b6/56/26b656ab51ababed99437b4d17b2061f.jpg" alt="">
+                <h3>Night Changes</h3>
+                <audio controls>
+                    <source src="assests/One Direction - Night Changes.mp3" type="audio/mp3">
+                    <hr ref="assests/nightchanges.mp3">
+                </audio>
+            </div>
 
-        <!-- 3-Column Layout -->
-        <section class="services-preview">
-            <div class="card">
-                <h4>Web Design</h4>
-                <p>Beautiful and responsive websites tailored to your brand.</p>
-                <a href="services.html" class="btn">Learn More</a>
+            <div class="album">
+                <img src="https://i.pinimg.com/736x/a3/7e/d6/a37ed6018c16edf01b29bf87e1f7f535.jpg" alt="">
+                <h3>I Wanna Be Yours</h3>
+                <audio controls>
+                    <source src="assests/I Wanna Be Yours.mp3" type="audio/mp3">
+                </audio>
             </div>
-            <div class="card">
-                <h4>Branding</h4>
-                <p>Create a strong identity that resonates with your audience.</p>
-                <a href="services.html" class="btn">Learn More</a>
-            </div>
-            <div class="card">
-                <h4>Strategy</h4>
-                <p>Data-driven strategies to achieve your business goals.</p>
-                <a href="services.html" class="btn">Learn More</a>
-            </div>
-        </section>
-    </main>
 
+            <div class="album">
+                <img src="https://i.pinimg.com/736x/df/52/2f/df522f82c5d9223d3af40304ba1ea9e1.jpg" alt="">
+                <h3>Heat Waves</h3>
+                <audio controls>
+                    <source src="assests/Glass Animals - Heat Waves (Official Video).mp3" type="audio/mp3">
+                </audio>
+            </div>
+        </div>
+    </section>
+
+    <!-- SUBSCRIPTION SECTION -->
+    <section class="subs">
+        <h2>Subscription Plans</h2>
+        <div class="subs-card">
+            <div>
+                <h3>Monthly Pack</h3>
+                <p>₹149/month</p>
+                <button>Subscribe</button>
+            </div>
+            <div>
+                <h3>Yearly Pack</h3>
+                <p>₹999/year</p>
+                <button>Subscribe</button>
+            </div>
+            <div>
+                <h3>Family Pack</h3>
+                <p>₹1499/year</p>
+                <button>Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
-        <section class="footer-content">
-            <p>&copy; 2026 Creative Studio. All rights reserved.</p>
-            <address>
-                📍ABC Tech Solutions Pvt. Ltd.
-5th Floor, Infinity Business Park
-Malad–Goregaon Link Road
-Malad (West)
-Mumbai – 400064
-Maharashtra, India | 📧 hello@creativestudio.com
-            </address>
-            <div class="social-links">
-                <a href="#" title="Facebook">f</a>
-                <a href="#" title="Twitter">𝕏</a>
-                <a href="#" title="Instagram">📷</a>
-            </div>
-        </section>
+        <div class="footer-links">
+            <h4>Shop</h4>
+            <a href="#">Gift Cards</a><br>
+        </div>
+
+        <div class="footer-links">
+            <h4>Store</h4>
+            <a href="#">Download App</a><br>
+        </div>
+
+        <div class="footer-links">
+            <h4>Career</h4>
+        </div>
+
+        <div class="footer-links">
+            <h4>Contact</h4>
+            <a href="#">Email Us</a><br>
+        </div>
     </footer>
+
 </body>
 </html>
+

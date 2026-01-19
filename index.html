@@ -1,110 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Store</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+  <meta charset="UTF-8">
+  <title>CSS Box Model Practice</title>
 
+  <!-- Link external CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <h2 class="logo">MusicHub</h2>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="#">Songs</a>
-            <a href="#">Shop</a>
-            <a href="#">Subscriptions</a>
-            <a href="login.html" class="login-btn">Login</a>
-        </nav>
-    </header>
+  <h1>CSS Box Model Tasks</h1>
 
-    <!-- HERO -->
-    <section class="hero">
-        <h1>Feel The Beat</h1>
-        <p>Stream your favorite tracks anytime, anywhere.</p>
-        <button class="btn">Start Free Trial</button>
-    </section>
+  <!-- TASK 1: CONTENT VS PADDING -->
+  <h2>Task 1: Content vs Padding</h2>
+  <div class="box padding-box">
+    This text shows padding effect.
+  </div>
 
-    <!-- SONG SECTION -->
-    <section class="albums">
-        <h2>Popular Songs</h2>
-        <a href="playlist.html">Songs</a>
+  <!-- TASK 2: CONTENT VS MARGIN -->
+  <h2>Task 2: Content vs Margin</h2>
+  <div class="box margin-box">
+    This text shows margin effect.
+  </div>
 
-        <div class="album-container">
-            <div class="album">
-                <img src="https://i.pinimg.com/1200x/26/b6/56/26b656ab51ababed99437b4d17b2061f.jpg" alt="">
-                <h3>Night Changes</h3>
-                <audio controls>
-                    <source src="assests/One Direction - Night Changes.mp3" type="audio/mp3">
-                    <hr ref="assests/nightchanges.mp3">
-                </audio>
-            </div>
+  <!-- TASK 3: PADDING vs MARGIN BACKGROUND -->
+  <h2>Task 3: Padding and Background</h2>
+  <div class="box padding-bg">
+    Padding is colored
+  </div>
 
-            <div class="album">
-                <img src="https://i.pinimg.com/736x/a3/7e/d6/a37ed6018c16edf01b29bf87e1f7f535.jpg" alt="">
-                <h3>I Wanna Be Yours</h3>
-                <audio controls>
-                    <source src="assests/I Wanna Be Yours.mp3" type="audio/mp3">
-                </audio>
-            </div>
+  <div class="box margin-bg">
+    Margin is not colored
+  </div>
 
-            <div class="album">
-                <img src="https://i.pinimg.com/736x/df/52/2f/df522f82c5d9223d3af40304ba1ea9e1.jpg" alt="">
-                <h3>Heat Waves</h3>
-                <audio controls>
-                    <source src="assests/Glass Animals - Heat Waves (Official Video).mp3" type="audio/mp3">
-                </audio>
-            </div>
-        </div>
-    </section>
+  <!-- TASK 4: SIDE-SPECIFIC SPACING -->
+  <h2>Task 4: Side-Specific Spacing</h2>
+  <div class="box shorthand-box">
+    Shorthand spacing example
+  </div>
 
-    <!-- SUBSCRIPTION SECTION -->
-    <section class="subs">
-        <h2>Subscription Plans</h2>
-        <div class="subs-card">
-            <div>
-                <h3>Monthly Pack</h3>
-                <p>₹149/month</p>
-                <button>Subscribe</button>
-            </div>
-            <div>
-                <h3>Yearly Pack</h3>
-                <p>₹999/year</p>
-                <button>Subscribe</button>
-            </div>
-            <div>
-                <h3>Family Pack</h3>
-                <p>₹1499/year</p>
-                <button>Subscribe</button>
-            </div>
-        </div>
-    </section>
+<!-- TASK 5 -->
+<section class="task">
+  <h2>Task 5: Invalid and Extreme Values</h2>
+  <div class="box invalid-padding">Padding -20px</div>
+  <div class="box negative-margin">Margin -20px</div>
+</section>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="footer-links">
-            <h4>Shop</h4>
-            <a href="#">Gift Cards</a><br>
-        </div>
+<!-- TASK 6 -->
+<section class="task">
+  <h2>Task 6: Margin Collapse</h2>
+  <div class="box box1">Box 1</div>
+  <div class="box box2">Box 2</div>
+</section>
 
-        <div class="footer-links">
-            <h4>Store</h4>
-            <a href="#">Download App</a><br>
-        </div>
+<!-- TASK 7 -->
+<section class="task">
+  <h2>Task 7: Inline vs Block</h2>
+  <div class="inline-test">DIV Element</div>
+  <span class="inline-test">SPAN Element</span>
+</section>
 
-        <div class="footer-links">
-            <h4>Career</h4>
-        </div>
+<!-- TASK 8 -->
+<section>
+  <h2>Task 8: Why Flex Exists</h2>
+  <div class="no-flex">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+  </div>
 
-        <div class="footer-links">
-            <h4>Contact</h4>
-            <a href="#">Email Us</a><br>
-        </div>
-    </footer>
+  <div class="flex">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+  </div>
+</section>
+
+<!-- TASK 9 -->
+<section>
+  <h2>Task 9: Padding Inside Flex Items</h2>
+  <div class="flex">
+    <div class="item padded">Item A</div>
+    <div class="item padded">Item B</div>
+    <div class="item padded">Item C</div>
+  </div>
+</section>
+
+<!-- TASK 10 -->
+<section>
+  <h2>Task 10: Margin vs Gap</h2>
+  <div class="flex margin-space">
+    <div class="item">One</div>
+    <div class="item">Two</div>
+    <div class="item">Three</div>
+  </div>
+
+  <div class="flex gap-space">
+    <div class="item">One</div>
+    <div class="item">Two</div>
+    <div class="item">Three</div>
+  </div>
+</section>
+
+<!-- TASK 11 -->
+<section>
+  <h2>Task 11: Main Axis vs Cross Axis</h2>
+  <div class="flex row">
+    <div class="item">Row 1</div>
+    <div class="item">Row 2</div>
+  </div>
+
+  <div class="flex column">
+    <div class="item">Col 1</div>
+    <div class="item">Col 2</div>
+  </div>
+</section>
+
+<!-- TASK 12 -->
+<section>
+  <h2>Task 12: justify-content vs margin</h2>
+  <div class="flex space-between">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+  </div>
+</section>
+
+<!-- TASK 13 -->
+<section>
+  <h2>Task 13: align-items & padding</h2>
+  <div class="flex center-align">
+    <div class="item">Small</div>
+    <div class="item big-padding">Big Padding</div>
+    <div class="item">Small</div>
+  </div>
+</section>
+
+<!-- TASK 14 -->
+<section>
+  <h2>Task 14: Auto Margin</h2>
+  <div class="flex navbar">
+    <div class="item">Logo</div>
+    <div class="item auto">Login</div>
+  </div>
+</section>
+
+<!-- TASK 15 -->
+<section>
+  <h2>Task 15: Button Design</h2>
+  <button class="btn">Click Me</button>
+</section>
+
+<!-- TASK 16 -->
+<section>
+  <h2>Task 16: Card Component</h2>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="card image">
+    <h3>Card Title</h3>
+    <p>Card description text.</p>
+    <button class="btn">Action</button>
+  </div>
+</section>
+
+<!-- TASK 17 -->
+<section>
+  <h2>Task 17: Box Size Illusion</h2>
+  <div class="illusion padding-box">Padding Box</div>
+  <div class="illusion margin-box">Margin Box</div>
+</section>
+
+<!-- TASK 18 -->
+<section>
+  <h2>Task 18: Box Sizing Fix</h2>
+  <div class="flex overflow-container">
+    <div class="overflow-item">Item</div>
+  </div>
+</section>
+
+<!-- TASK 19 -->
+<section>
+  <h2>Task 19: Centering with Flex</h2>
+  <div class="center-container">
+    <div class="center-item">Centered</div>
+  </div>
+</section>
+
+<!-- TASK 20 -->
+<section>
+  <h2>Task 20: Rule Formation</h2>
+  <p>Padding = inside space<br>
+     Margin = outside space<br>
+     Flexbox = alignment & control
+  </p>
+</section>
 
 </body>
 </html>
-

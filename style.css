@@ -1,271 +1,305 @@
-/* ============================
-   GLOBAL RESET + FONT SETTINGS
-   ============================ */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif; /* Sets default font style */
-}
-
-/* ============================
-   BODY SETTINGS (Dark Theme)
-   ============================ */
+/* COMMON STYLES */
 body {
-    background: #0d0d0d; /* Main dark background */
-    color: white;        /* Default text color */
+  font-family: Arial, sans-serif;
+  padding: 20px;
 }
 
-/* ============================
-   HEADER SECTION
-   ============================ */
-header {
-    display: flex;                /* Places items horizontally */
-    justify-content: space-between; /* Separates logo + nav */
-    padding: 20px 50px;
-    background: black;
-    align-items: center;          /* Vertically centers content */
+h1, h2 {
+  margin-bottom: 10px;
 }
 
-header .logo {
-    font-size: 28px;
-    font-weight: bold;
-    color: #f5f0f2;               /* Light soft color */
+.box {
+  width: 220px;
+  border: 2px solid black;
+  margin-bottom: 30px;
 }
 
-/* Navigation Links */
-nav a {
-    margin: 0 15px;
-    text-decoration: none; /* Removes underline */
-    color: white;
-    transition: .3s;       /* Smooth hover effect */
+/* =======================
+   TASK 1: PADDING
+======================= */
+.padding-box {
+  padding: 20px;   /* try 40px, 80px */
+  background-color: #e3f2fd;
 }
 
-nav a:hover {
-    color: #ddd0d5;        /* Light hover color */
+/* =======================
+   TASK 2: MARGIN
+======================= */
+.margin-box {
+  padding: 0;
+  margin: 40px;
+  background-color: #c8e6c9;
 }
 
-/* ============================
-   HERO SECTION (Banner)
-   ============================ */
-.hero {
-    text-align: center;
-    padding: 120px 20px;
-    background: url("https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?auto=format&fit=crop&w=1200&q=60")
-    center/cover no-repeat; /* Full width background image */
+/* =======================
+   TASK 3: BACKGROUND
+======================= */
+.padding-bg {
+  padding: 30px;
+  background-color: #ffccbc;
 }
 
-.hero h1 {
-    font-size: 60px;
-    font-weight: 700;
+.margin-bg {
+  margin: 30px;
+  background-color: #ffccbc;
 }
 
-/* Button Styling */
+/* =======================
+   TASK 4: SHORTHAND
+======================= */
+.shorthand-box {
+  padding: 10px 50px 30px 70px;
+  margin: 60px 20px;
+  background-color: #d1c4e9;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.task {
+  margin-bottom: 50px;
+}
+
+.box {
+  border: 2px solid black;
+  padding: 10px;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+/* TASK 5 */
+.invalid-padding {
+  padding: -20px; /* ignored */
+}
+
+.negative-margin {
+  margin-top: -20px;
+  background: #ffcdd2;
+}
+
+/* TASK 6 */
+.box1 {
+  margin-bottom: 50px;
+  background: #bbdefb;
+}
+
+.box2 {
+  margin-top: 30px;
+  background: #c8e6c9;
+}
+
+/* TASK 7 */
+.inline-test {
+  border: 1px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+.box, .item {
+  border: 2px solid black;
+  padding: 10px;
+  background: #e3f2fd;
+}
+
+/* ===== GLOBAL ===== */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  padding: 20px;
+  background: #f3f6fb;
+}
+
+h1 {
+  text-align: center;
+  color: #3f51b5;
+}
+
+h2 {
+  color: #37474f;
+  margin-bottom: 12px;
+}
+
+section {
+  background: white;
+  padding: 20px;
+  margin-bottom: 50px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+/* COMMON BOX */
+.box, .item {
+  border-radius: 10px;
+  padding: 12px;
+  font-weight: 500;
+  color: #263238;
+}
+
+/* ===== TASK 8 ===== */
+.no-flex .box {
+  background: #ffcdd2;
+  margin-bottom: 10px;
+}
+
+.flex {
+  display: flex;
+  gap: 20px;
+}
+
+.flex .box {
+  background: #bbdefb;
+}
+
+/* ===== TASK 9 ===== */
+.padded {
+  padding: 30px;
+  background: #c5e1a5;
+}
+
+/* ===== TASK 10 ===== */
+.margin-space .item {
+  margin: 20px;
+  background: #ffcc80;
+}
+
+.gap-space .item {
+  background: #80deea;
+}
+
+/* ===== TASK 11 ===== */
+.row .item {
+  background: #d1c4e9;
+}
+
+.column .item {
+  background: #f8bbd0;
+}
+
+/* ===== TASK 12 ===== */
+.space-between .item {
+  background: #b2ebf2;
+}
+
+/* ===== TASK 13 ===== */
+.center-align {
+  align-items: center;
+}
+
+.center-align .item {
+  background: #ffe082;
+}
+
+.big-padding {
+  padding: 40px;
+  background: #ffab91;
+}
+
+/* ===== TASK 14 ===== */
+.navbar {
+  background: #e8eaf6;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.navbar .item {
+  background: #9fa8da;
+}
+
+.auto {
+  margin-left: auto;
+}
+
+/* ===== TASK 15 ===== */
 .btn {
-    padding: 12px 25px;
-    border: none;
-    background: #992d56;  /* Pink accent color */
-    color: white;
-    border-radius: 5px;
-    border-color: #ffffff;
-    cursor: pointer;
-    transition: .3s;
+  padding: 12px 26px;
+  margin: 20px 0;
+  background: linear-gradient(135deg, #673ab7, #3f51b5);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 15px;
 }
 
-.btn:hover {
-    transform: scale(1.08); /* Slight zoom */
-    opacity: 0.9;           /* Soft fade effect */
+/* ===== TASK 16 ===== */
+.card {
+  width: 230px;
+  padding: 16px;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 
-/* ============================
-   ALBUM SECTION (Cards)
-   ============================ */
-.albums {
-    text-align: center;
-    padding: 50px 20px;
+.card img {
+  width: 100%;
+  border-radius: 10px;
 }
 
-/* Album Container Layout */
-.album-container {
-    display: flex;
-    gap: 30px;            /* Adds space between albums */
-    justify-content: center;
-    margin-top: 30px;
+.card h3 {
+  color: #3f51b5;
 }
 
-/* Individual Album Card */
-.album {
-    background: #181818;
-    padding: 20px;
-    width: 250px;
-    border-radius: 8px;   /* Rounded corners */
-    transition: .3s;
+/* ===== TASK 17 ===== */
+.illusion {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  border-radius: 12px;
+  text-align: center;
+  line-height: 150px;
+  font-weight: bold;
 }
 
-/* Album Images */
-.album img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 10px;
+.padding-box {
+  padding: 30px;
+  background: #81c784;
 }
 
-/* Album Hover Animation */
-.album:hover {
-    transform: translateY(-10px); /* Moves card up slightly */
-    box-shadow: 0 0 15px #ff005c; /* Glow effect */
+.margin-box {
+  margin: 30px;
+  background: #ffb74d;
 }
 
-/* ============================
-   SUBSCRIPTION SECTION
-   ============================ */
-.subs {
-    text-align: center;
-    padding: 50px 20px;
+/* ===== TASK 18 ===== */
+.overflow-container {
+  width: 300px;
+  border-radius: 12px;
+  border: 3px dashed #e53935;
+  padding: 10px;
 }
 
-/* Subscription Card Layout */
-.subs-card {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 30px;
+.overflow-item {
+  width: 150px;
+  padding: 40px;
+  box-sizing: border-box;
+  background: #90caf9;
+  border-radius: 10px;
 }
 
-/* Subscription Cards */
-.subs-card div {
-    background: #181818;
-    padding: 20px;
-    width: 200px;
-    border-radius: 8px;
-    transition: .3s;
+/* ===== TASK 19 ===== */
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border-radius: 12px;
+  border: 3px dashed #009688;
+  background: #e0f2f1;
 }
 
-.subs-card div:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px #504c4d; /* Light red glow */
-}
-
-/* ============================
-   LOGIN & SIGNUP FORMS
-   ============================ */
-.form-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;  /* Full height center */
-    background: rgb(14, 0, 0);
-}
-
-.form-box {
-    background: #e69898;  /* Dark wine color box */
-    padding: 40px;
-    border-radius: 8px;
-    width: 350px;
-    text-align: center;
-}
-
-/* Form Input Fields */
-.form-box input {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-}
-
-/* ============================
-   FOOTER SECTION
-   ============================ */
-footer {
-    background: rgb(12, 0, 0);
-    display: flex;
-    justify-content: space-around;
-    padding: 40px 20px;
-    margin-top: 50px;
-}
-
-/* Footer Links */
-footer .footer-links a {
-    color: rgb(255, 255, 255);       /* Default white */
-}
-
-footer .footer-links a:hover {
-    color: #eb82a9;     /* Pink hover tone */
-}
-
-/* ============================
-   PLAYLIST PAGE SECTION
-   ============================ */
-.playlist {
-    padding: 50px 20px;
-}
-
-.playlist h1 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-/* Individual Song Cards */
-.song-card {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    background: #181818;
-    margin: 15px auto;
-    padding: 15px;
-    width: 85%;
-    border-radius: 10px;
-    transition: .3s;
-}
-
-/* Playlist Album Images */
-.song-card img {
-    width: 80px;
-    height: 80px;
-    border-radius: 8px;
-}
-
-/* Song Card Hover */
-.song-card:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 10px #ff005c;
-}
-
-/* Audio Player */
-.song-info audio {
-    width: 100%;
-    margin-top: 5px;
-}
-
-/* ============================
-   RESPONSIVE DESIGN
-   ============================ */
-
-/* Tablet & Small Screen */
-@media(max-width: 750px) {
-    .album-container,
-    .subs-card,
-    footer {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header {
-        flex-direction: column;
-        gap: 10px;
-    }
-}
-
-/* Mobile Layout */
-@media(max-width:600px){
-    .song-card {
-        flex-direction: column;
-        text-align: center;
-        width: 95%;
-    }
-
-    .song-card img {
-        width: 120px;
-        height: 120px;
-    }
+.center-item {
+  padding: 20px;
+  background: #4db6ac;
+  color: white;
+  border-radius: 10px;
 }
